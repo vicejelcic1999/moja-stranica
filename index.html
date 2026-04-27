@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja web stranica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>MojaStranica</h2>
+
+    <nav>
+      <a href="#pocetna">Početna</a>
+      <a href="#omeni">O meni</a>
+      <a href="#projekti">Projekti</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="pocetna" class="hero">
+    <img src="slike/download.jpg" alt="Moja profilna slika" class="profilna-slika">
+    <h1>Bok, ja sam Goku</h1>
+    <p>Učim izrađivati web stranice koristeći HTML, CSS i JavaScript.</p>
+    <button onclick="promijeniTekst()">Klikni me</button>
+    <p id="poruka"></p>
+  </section>
+
+  <section id="omeni" class="section">
+    <h2>O meni</h2>
+    <p>Ovo je moja prva web stranica. Trenutno učim osnove web programiranja.</p>
+  </section>
+
+  <section id="projekti" class="section">
+    <h2>Moji projekti</h2>
+
+    <div class="kartice">
+      <div class="kartica">
+        <h3>Projekt 1</h3>
+        <p>Jednostavna HTML stranica.</p>
+      </div>
+
+      <div class="kartica">
+        <h3>Projekt 2</h3>
+        <p>Stranica sa stilom pomoću CSS-a.</p>
+      </div>
+
+      <div class="kartica">
+        <h3>Projekt 3</h3>
+        <p>Gumb koji koristi JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="kontakt" class="section">
+  <h2>Kontakt</h2>
+
+  <form onsubmit="posaljiFormu(event)">
+    <input type="text" placeholder="Ime" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Poruka" required></textarea>
+
+    <button type="submit">Pošalji</button>
+  </form>
+
+  <p id="status"></p>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
